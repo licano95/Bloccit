@@ -1,5 +1,7 @@
 ## Bloccit: a Reddit clone to teach the fundamentals of web development and rails 4.
 
+##Heroku app name: licano95-bloccit
+
 Made with my mentor at [Bloc](http://bloc.io). 
 
 
