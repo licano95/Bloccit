@@ -9,6 +9,10 @@ group :production do
    gem 'sqlite3'
  end
 
+ group :development do
+  gem "rails-erd"
+end
+
  gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
