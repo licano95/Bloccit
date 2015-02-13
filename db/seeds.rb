@@ -8,6 +8,7 @@ require 'faker'
    )
  end
  posts = Post.all
+
  
  # Create Comments
  100.times do
