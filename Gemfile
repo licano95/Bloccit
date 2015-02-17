@@ -17,9 +17,13 @@ gem 'faker'
 
 gem 'devise'
 
+ gem 'pundit'
+
 gem 'figaro', '1.0'
 
  gem 'bootstrap-sass'
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
