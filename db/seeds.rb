@@ -20,6 +20,18 @@ require 'faker'
    )
  end
  topics = Topic.all
+
+ #create summary
+
+ 15.times do
+  Summary.create!(
+  name:         Faker::Lorem.sentence
+  description:  Faker::Lorem.sentence
+    )
+end
+
+summary = Summary.all
+
  
  
 # Create Posts
@@ -27,6 +39,7 @@ require 'faker'
   Post.create!(
      user:   users.sample,
       topic: topics.sample,
+      summary: summary.sample,
     title:  Faker::Lorem.sentence,
     body:   Faker::Lorem.paragraph
   )
