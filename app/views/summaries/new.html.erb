@@ -1,7 +1,7 @@
 <h1>summary</h1>
 <div>
      <h1>Enter a new summary</h1>
-     <%= form_for [@posts, @summary] do |f| %>
+     <%= form_for [@posts, @summary], url: summary_path(@summary) do |f| %>
        <div class="form-group">
          <%= f.label :title %>
          <%= f.text_field :name, class: 'form-control', placeholder: "Enter summary title" %>

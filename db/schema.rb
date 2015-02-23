@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20150220191050) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.integer  "topic_id"
-    t.integer  "summary_id"
+    t.string   "summary_id"
   end
 
   add_index "posts", ["summary_id"], name: "index_posts_on_summary_id"

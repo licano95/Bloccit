@@ -25,7 +25,7 @@ require 'faker'
 
  15.times do
   Summary.create!(
-  name:         Faker::Lorem.sentence
+  name:         Faker::Lorem.sentence,
   description:  Faker::Lorem.sentence
     )
 end
