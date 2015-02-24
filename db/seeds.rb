@@ -72,6 +72,7 @@ end
    password: 'helloworld',
    role:     'moderator'
  )
+
  moderator.skip_confirmation!
  moderator.save!
  
@@ -83,6 +84,16 @@ end
  )
  member.skip_confirmation!
  member.save!
+
+ user = User.first
+ user.skip_reconfirmation!
+ user.update_attributes!(
+   email: 'licano95@gmail.com',
+   password: 'helloworld',
+   role: 'admin'
+ )
+
+
 
 puts "Seed finished"
 puts "#{User.count} users created"
