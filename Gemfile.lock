@@ -103,6 +103,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    redcarpet (3.2.2)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     ruby-graphviz (1.0.9)
@@ -156,6 +157,7 @@ DEPENDENCIES
   rails (= 4.0.0)
   rails-erd
   rails_12factor
+  redcarpet
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3
