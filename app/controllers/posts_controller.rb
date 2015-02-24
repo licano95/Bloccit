@@ -1,12 +1,13 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-     authorize @posts
+     authorize @post
   end
 
   def show
+      @topic = Topic.find(params[:topic_id])
       @post = Post.find(params[:id])
-        @topic = Topic.find(params[:topic_id])
+        
   end
 
   def create
@@ -49,10 +50,11 @@ class PostsController < ApplicationController
        render :edit
      end
    end
- end
+
 
 private
 
-def post_params
-  params.require(:post).permit(:title, :body, :image)
+  def post_params
+    params.require(:post).permit(:title, :body, :image)
+  end
 end
