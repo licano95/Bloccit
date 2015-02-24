@@ -17,13 +17,19 @@ gem 'faker'
 
 gem 'devise'
 
- gem 'pundit'
+gem 'pundit'
 
 gem 'figaro', '1.0'
 
- gem 'bootstrap-sass'
+gem 'bootstrap-sass'
 
- gem 'redcarpet'
+gem 'redcarpet'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
 
 
 
