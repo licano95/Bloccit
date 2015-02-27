@@ -1,8 +1,11 @@
 class Post < ActiveRecord::Base
+   require 'paginate.rb'
   has_many :comments
   belongs_to :user
   belongs_to :topic
   has_one :summary
+
+ 
 
     mount_uploader :image, ImageUploader
 
